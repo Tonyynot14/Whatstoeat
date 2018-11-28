@@ -51,10 +51,12 @@ int [][] restaurantInfo ={{R.string.villageGrill,R.string.villageGrillAddress,R.
         ImageView restaurantPicture =findViewById(R.id.randomPicture);
         Button buttonTry = findViewById(R.id.buttonTryAgain);
         int randint =randomNum(restaurantInfo.length);
+        // Makes sure that the choice is not already in the array list choices, also makes sure that array list does not get bigger than array
         while(!checkArrayList(choices,randint) && choices.size()<=restaurantInfo.length)
         {
             randint =randomNum(restaurantInfo.length);
         }
+        // display a random page with information from restaurant table
        if(checkArrayList(choices,randint)) {
 
            restaurantName.setText(restaurantInfo[randint][0]);
@@ -62,6 +64,8 @@ int [][] restaurantInfo ={{R.string.villageGrill,R.string.villageGrillAddress,R.
            restaurantPicture.setImageResource(restaurantInfo[randint][2]);
            choices.add(randint);
        }
+
+       // Once the app is out of restaurants in the array restaurantsinfo it displays a default page
        else
        {
 
@@ -74,6 +78,7 @@ int [][] restaurantInfo ={{R.string.villageGrill,R.string.villageGrillAddress,R.
         choices.add(randint);
     }
 
+     //Checks array list for choice appearing already. this prevents pages being repeated.
     public boolean checkArrayList(ArrayList<Integer> pastChoices, int num)
     {
         boolean check=true;
@@ -87,6 +92,8 @@ int [][] restaurantInfo ={{R.string.villageGrill,R.string.villageGrillAddress,R.
         }
         return check;
     }
+
+    // Method returns random number between zero and parameter
     public int randomNum(int arraySize)
     {
         Random r = new Random();
