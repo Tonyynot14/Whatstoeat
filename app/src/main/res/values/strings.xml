@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">What\'s to eat?</string>
+    <string name="splashTextView">Let us help you pick</string>
+    <string name="randomRestaurantPlace">Random Restuarant</string>
+    <string name="title_activity_randomrestaurant">Randomrestaurant</string>
+    <string name="villageGrill">The Village Grill</string>
+    <string name="villageGrillAddress"> 580 Huffman Mill Rd,
+        Burlington, NC 27215
+    </string>
+    <string name="quote1">Whats to eat tonight?</string>
+    <string name="quote2">You choose</string>
+    <string name="quote3">Nah not there</string>
+    <string name="quote4">Anywhere you want</string>
+    <string name="answers">One simple click below and we will help you with this situation.</string>
+    <string name="grillWorx">Grill Worx</string>
+    <string name="grillWorxAddress">1233 W Webb Ave,
+        Burlington, NC 27217</string>
+    <string name="daVinci">da Vinci\'s Table</string>
+    <string name="daVinciAddress">2260 S Church St, Burlington, NC 27215</string>
+    <string name="outOfPlaces">No more Restaurants </string>
+    <string name="outOfPlaces2">Press back button to start list again</string>
+    <string name="nextRandomRestaurant">Try again?</string>
+
+
+</resources>
